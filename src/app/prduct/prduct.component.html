@@ -1,0 +1,28 @@
+<div class="form-group">
+  <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search product">
+ 
+</div>
+<div class="container">
+    <table class="table table-trapped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Price</th>
+          </tr> 
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let data of product | filterData: searchText ">
+              <td>{{data.name}}</td >
+              <td>{{data.id}}</td >
+              <td>{{data.price}}</td >
+              <td>
+                <button class="btn btn-primary" (click)=getCurrentUser(data.name)> Details</button>
+              </td>
+          </tr>
+        </tbody>
+    </table>
+    <app-prduct-details *ngIf="loadComponent" [Name]='product_name'> </app-prduct-details>
+    
+  </div>
