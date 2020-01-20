@@ -11,6 +11,8 @@ import { PipesComponent } from './pipes/pipes.component';
 
 import { CustPipesComponent } from './customPipes.pipe';
 import { FilterPipesComponent } from './filterPipes.pipe';
+import { DirectivesComponent } from './directives/directives.component';
+import { DirectiveCustomDirective } from './directives/directive-custom.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FilterPipesComponent } from './filterPipes.pipe';
     CalculatorComponent,
     PipesComponent,
     CustPipesComponent,
-    FilterPipesComponent
+    FilterPipesComponent,
+    DirectivesComponent,
+    DirectiveCustomDirective
   ],
   imports: [
     BrowserModule,
