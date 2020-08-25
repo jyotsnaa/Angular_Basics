@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PrductComponent implements OnInit {
 
+  titile = "Child component product"
   loadComponent = false;
   product_name='';
 

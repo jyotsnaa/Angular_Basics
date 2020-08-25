@@ -4,6 +4,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class CustPipesComponent implements PipeTransform {
 
       transform(value: string, args: string[]): any{
+
+        console.log(value , "From Custom Pipes");
         if(!value){
           return value;
         }

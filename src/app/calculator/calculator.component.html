@@ -6,29 +6,31 @@
 </div>
 
 <div class="keypad">
-     <div class="keys ackey one-line" (click)="allclear()">AC</div>
+   <!--  <div class="keys ackey one-line" (click)="allclear()">AC</div> -->
      <div class="keys opkey one-line" (click)="pressKey('/')">/</div>
      <div class="keys opkey one-line" (click)="pressKey('*')">*</div>
      <div class="keys opkey one-line" (click)="pressKey('-')">-</div>
-    
-
-     <div class="keys numkey one-line" (click)="pressKey('7')">7</div>
-     <div class="keys numkey one-line" (click)="pressKey('8')">8</div>
-     <div class="keys numkey one-line" (click)="pressKey('9')">9</div>
-
      <div class="keys opkey one-line" (click)="pressKey('+')">+</div>
-    
-     <div class="keys numkey one-line" (click)="pressKey('4')">4</div>
-     <div class="keys numkey one-line" (click)="pressKey('5')">5</div>
-     <div class="keys numkey one-line" (click)="pressKey('6')">6</div>
-
      <div class="keys equalKey one-line" (click)="getAnswer()">=</div>
+    
+
+     <div class="keys numkey one-line" (click)="pressKey('7')">9</div>
+     <div class="keys numkey one-line" (click)="pressKey('8')">8</div>
+     <div class="keys numkey one-line" (click)="pressKey('9')">7</div>
+
+   
+    
+     <div class="keys numkey one-line" (click)="pressKey('4')">6</div>
+     <div class="keys numkey one-line" (click)="pressKey('5')">5</div>
+     <div class="keys numkey one-line" (click)="pressKey('6')">4</div>
+
+   
      
-     <div class="keys numkey one-line" (click)="pressKey('1')">1</div>
+     <div class="keys numkey one-line" (click)="pressKey('1')">3</div>
      <div class="keys numkey one-line" (click)="pressKey('2')">2</div>
-     <div class="keys numkey one-line" (click)="pressKey('3')">3</div>
+     <div class="keys numkey one-line" (click)="pressKey('3')">1</div>
     
      <div class="keys numkey zerokey one-line" (click)="pressKey('0')">0</div>
-     <div class="keys numkey one-line" (click)="pressKey('.')">.</div>
-     
+     <!-- <div class="keys numkey one-line" (click)="pressKey('.')">.</div>
+     -->
     </div>

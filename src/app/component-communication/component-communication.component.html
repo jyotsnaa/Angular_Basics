@@ -1,0 +1,27 @@
+<p>component-communication works!</p>
+
+<div class="container column">
+    <br/>
+     <br/>
+    <h3>Component Communcation</h3>
+    <h3 customAtrributeDirective >Hello to My city</h3>
+    <div customAtrributeDirective >Hello</div>
+    <button class="dropdown-btn" type="button" appDropdown>Share on social media</button>
+    <br/> <br/>
+  
+    <button class="btn btn-primary" (click)='changeData()'>Change Data</button>  <br/>  <br/>
+    <button class="btn btn-primary" (click)='order.showSupplyName()'>Show name from Order</button>
+    <h4>City from Child Order: {{order.orderCity}}</h4>
+  
+  </div> 
+  
+    <!--#order temp refrence variable -  -->
+    <app-order #order 
+    [data]='geekData' 
+    (showDataEvent)='showDataFromChild($event)'></app-order>
+    
+     <!-- dynamicallly pass HTML
+    <ng-content> 
+      <app-prduct></app-prduct>
+    </ng-content>
+    -->

@@ -1,5 +1,6 @@
-import { Component, Input, EventEmitter, Output } from '@angular/core';
-import { identifierModuleUrl } from '@angular/compiler';
+import { Component, EventEmitter, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,11 @@ import { identifierModuleUrl } from '@angular/compiler';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-app';
+
+  constructor(){  }
+
+  ngOnInit(){
+
+  }
   
 }

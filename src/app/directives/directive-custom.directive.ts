@@ -24,7 +24,7 @@ export class DirectiveCustomDirective {
     const next: string = current.concat(event.key);
   
     if(next && !String(next).match(this.regEx) || (current.length && next.length > this.maxLength) ){
-      event.preventDefault();
+      event.preventDefault(); // rescrict from adding values
     }
    }
 

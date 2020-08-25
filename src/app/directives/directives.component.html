@@ -1,1 +1,60 @@
-<p>directives works!</p>
+ <!--
+  <h3>{{Product.Id}} {{Product.Title}} {{Product.Price}}</h3>
+  <h2>{{message}}</h2>
+
+  <button (click)='sayHello()' [style.width.px]='width'>Click Me</button>   
+  <input type="text" [(ngModel)]='height'/>  -->
+  
+  <div class="container">
+   <br/>
+   <br/>
+
+  <h1 class="text-center">{{title}}</h1>
+   <hr/>
+   <br/>
+
+  <div class="row">
+    
+      <input type="text" class="form-control input" placeholder="serach">
+
+  </div>
+
+  <table class="table table-trapped">
+    <thead>
+      <tr>
+        <th> <button class="btn btn-danger" (click)="toggleImage()">{{showImage ? 'Hide Image' : 'Show Image' }}</button></th>
+        
+        <th>Id</th>
+        <th>Product</th>
+        <th>Code</th>
+        <th>Avilable</th>
+        <th>Price</th>
+        <th>Star Rating</th>
+        <th>description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products ">     
+        <td> 
+          <img [src]="product.imageUrl" 
+          [style.width.px]="imageUrl"
+          [style.margin.px]="imageMargin"/>
+        </td>
+        <td>{{product.productId}}</td>
+        <td>{{product.productName | uppercase}}</td>
+        <td>{{product.productCode}}</td>
+        <td>{{product.releaseDate }}</td>
+        <td>{{product.price  | currency}}</td>
+        <td>{{product.starRating}}</td>
+        <td>{{product.description}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<input type="text" class="form-control input" [(ngModel)]="number" placeholder="Directive Number" appDirectiveCustom/>
+  
+<button class="btn btn-primary button" customAtrributeDirective>Directive Click</button>
